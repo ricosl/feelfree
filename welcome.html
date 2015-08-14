@@ -57,7 +57,7 @@
                         <a href="#about">Quick Stats</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Quick Push</a>
+                        <a href="#login">Quick Push</a>
                     </li>
                     <li>
                         <a href="index.html">Logout</a>
@@ -99,10 +99,10 @@
                     <p>Place the priority stats here.</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#morestats" aria-expanded="false" aria-controls="collapseExample">
                     Show More Stats
                   </button>
-                  <div class="collapse col-lg-12" id="collapseExample">
+                  <div class="collapse col-lg-12" id="morestats">
                     <div class="morestats">
                       <p>What's going on here!</p>
                     </div>
@@ -113,8 +113,8 @@
     </section>
 
     <!-- Contact Section -->
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <!-- login Grid Section -->
+    <section id="login">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -123,8 +123,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                <div class="col-sm-4 login-item">
+                    <a href="#loginModal1" class="login-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-upload fa-3x"></i>
@@ -133,8 +133,8 @@
                         <img src="img/campaign/campaign1.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                <div class="col-sm-4 login-item">
+                    <a href="#loginModal2" class="login-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-upload fa-3x"></i>
@@ -143,8 +143,8 @@
                         <img src="img/campaign/campaign2.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                <div class="col-sm-4 login-item">
+                    <a href="#loginModal3" class="login-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-upload fa-3x"></i>
@@ -153,8 +153,8 @@
                         <img src="img/campaign/campaign3.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                <div class="col-sm-4 login-item">
+                    <a href="#loginModal4" class="login-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-upload fa-3x"></i>
@@ -163,8 +163,8 @@
                         <img src="img/campaign/campaign4.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                <div class="col-sm-4 login-item">
+                    <a href="#loginModal5" class="login-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-upload fa-3x"></i>
@@ -173,8 +173,8 @@
                         <img src="img/campaign/campaign5.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                <div class="col-sm-4 login-item">
+                    <a href="#loginModal6" class="login-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -241,8 +241,8 @@
         </a>
     </div>
 
-    <!-- Portfolio Modals -->
-    <!-- <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- login Modals -->
+    <div class="login-modal modal fade" id="loginModal6" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -254,21 +254,34 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Login To your Dashboard</h2>
+                            <h2>Create New Campaign</h2>
                             <hr class="star-primary">
                             <form name="sentMessage" id="contactForm" novalidate>
 
                                 <div class="row control-group">
                                     <div class="form-group col-xs-12 floating-label-form-group controls">
-                                        <label>Email Address</label>
-                                        <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                        <label>Campaign Title</label>
+                                        <input type="text" class="form-control" placeholder="Title" id="title" required data-validation-required-message="Please enter a campaign title.">
                                         <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
                                 <div class="row control-group">
                                     <div class="form-group col-xs-12 floating-label-form-group controls">
-                                        <label>Password</label>
-                                        <input type="password" class="form-control" placeholder="Password" id="password" required data-validation-required-message="Please re-enter your password.">
+                                        <label>Campaign Description</label>
+                                        <input type="textarea" class="form-control" placeholder="Description" id="description" required data-validation-required-message="Please enter a description of your campaign.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>Choose an incentive</label>
+                                        <select class="form-control">
+                                          <option>Incentive 1</option>
+                                          <option>Incentive 2</option>
+                                          <option>Incentive 3</option>
+                                          <option>incentive 4</option>
+                                          <option>Add new incentive</option>
+                                        </select>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
@@ -276,17 +289,16 @@
                                 <div id="success"></div>
                                 <div class="row">
                                     <div class="form-group col-xs-12">
-                                        <button type="submit" class="btn btn-success btn-lg">Login</button>
+                                        <button type="submit" class="btn btn-success btn-lg" data-dismiss="modal">Finish</button>
                                     </div>
                                 </div>
                             </form>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
